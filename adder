@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+# the app adds all arguments together.
+import sys
+
+args = sys.argv
+result = 0
+
+if len(args) > 101:
+    print("the count of arguments must be under 100.")
+    exit()
+
+for i in range(1, len(args)):
+    result += int(args[i])
+
+print(result)
